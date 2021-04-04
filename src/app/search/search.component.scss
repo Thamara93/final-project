@@ -1,0 +1,27 @@
+.wrapper {
+  padding: 20px 40px 0 40px;
+  .form-div {
+    form {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      .form-group {
+        width: 100%;
+        margin-left: 30px;
+        input {
+          width: 210px;
+          height: 30px;
+        }
+        button {
+          width: 90px;
+          height: 35px;
+          background-color: rgb(47, 140, 109);
+        }
+      }
+    }
+  }
+  .form-content {
+    margin-top: 40px;
+    text-transform: uppercase;
+  }
+}

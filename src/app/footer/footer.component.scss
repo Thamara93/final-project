@@ -1,0 +1,16 @@
+footer {
+    text-align: center;
+    background-color: rgb(47, 140, 109);
+    padding: 2em;
+    .social-icon {
+      margin-bottom: 20px;
+      .social-icon-span {
+        margin-right: 10px;
+        a {
+          i {
+            color: black;
+          }
+        }
+      }
+    }
+  }

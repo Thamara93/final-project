@@ -1,0 +1,31 @@
+form {
+    margin: 2em auto;
+    padding: 6em;
+    width: 30%;
+    h1{
+      text-align: center;
+      padding: 2em;
+      text-transform: uppercase;
+  }
+    .form-group {
+      margin: 20px;
+      padding: 1em;
+      input{
+        height: 25px;
+        width: 60%;
+        margin-left: 2em;
+        border: 2px solid black;
+        //border-radius: 15% 15% 15%;
+      }
+      label{
+        font-size: medium;
+      }
+      button{
+        height: 25px;
+        border: black solid 1px;
+        font-size: medium;
+        //border-radius: 15% 15% 15%;
+        margin-right: 1em;
+      }
+    }
+  }
