@@ -13,6 +13,11 @@ import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: '/app-home',
+    pathMatch: 'full'
+  },
+  {
     path: 'app-most-visited-hotels',
     component: MostVisitedHotelsComponent 
   },
