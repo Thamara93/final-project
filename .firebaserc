@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "final-project-a0bb8": {
+      "hosting": {
+        "final-project": [
+          "final-project-a0bb8"
+        ]
+      }
+    }
+  }
+}

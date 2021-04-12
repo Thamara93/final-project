@@ -12,4 +12,17 @@ export class SignInComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  user = {
+    username: '',
+    password: '' 
+  }
+
+  logIn(form) {
+    console.log(form)
+    console.log(form.value)
+    console.log(form.valid)
+    if (this.user.username === 'tamar.gavashelishvili@gmail.com') {
+      console.log('hello')
+    }
+  }
 }

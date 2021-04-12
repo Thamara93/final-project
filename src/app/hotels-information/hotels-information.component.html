@@ -1,1 +1,12 @@
-<p>hotels-information works!</p>
+<!-- <p>hotels-information works!</p> -->
+<div class="wrapper">
+  <div class="container">
+    <div class="hotels-info">
+       <ul>
+           <li *ngFor="let hotel of hotels">
+              {{hotel.hotelName}} {{hotel.key}} 
+           </li>
+       </ul>
+    </div>
+  </div>
+</div>

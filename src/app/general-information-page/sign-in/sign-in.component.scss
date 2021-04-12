@@ -6,7 +6,7 @@ form {
       text-align: center;
       padding: 2em;
       text-transform: uppercase;
-  }
+    }
     .form-group {
       margin: 20px;
       padding: 1em;
@@ -16,6 +16,12 @@ form {
         margin-left: 2em;
         border: 2px solid black;
         //border-radius: 15% 15% 15%;
+        &.ng-valid{
+          background-color: rgb(101, 199, 132);
+        }
+        &.ng-invalid{
+          background-color: rgb(233, 132, 128);
+        }
       }
       label{
         font-size: medium;
@@ -26,6 +32,10 @@ form {
         font-size: medium;
         //border-radius: 15% 15% 15%;
         margin-right: 1em;
+        cursor: pointer;
+        &:disabled{
+          cursor: no-drop;
+        }
       }
     }
   }

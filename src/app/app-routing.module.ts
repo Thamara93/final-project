@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminComponent } from './admin/admin.component';
 import { BookingHistoryComponent } from './booking-history/booking-history.component';
 import { BookingComponent } from './booking/booking.component';
 import { MostVisitedHotelsComponent } from './general-information-page/most-visited-hotels/most-visited-hotels.component';
@@ -56,6 +57,10 @@ const routes: Routes = [
   {
     path: 'app-booking',
     component: BookingComponent
+  },
+  {
+    path: 'app-admin',
+    component: AdminComponent
   }
 ];
 

@@ -12,4 +12,18 @@ export class RegistrationComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  newUser = {
+    name: '',
+    surname: '',
+    email: '',
+    phoneNumber: '',
+    address: '',
+    country: '',
+    password: '',
+    repassword: ''
+}
+  registration(form) {
+    console.log(form);
+    console.log(this.newUser);
+  }
 }

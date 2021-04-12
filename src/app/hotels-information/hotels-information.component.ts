@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireDatabase } from "@angular/fire/database";
+import { Observable } from "rxjs";
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-hotels-information',
@@ -7,9 +10,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HotelsInformationComponent implements OnInit {
 
-  constructor() { }
+  constructor(private db: AngularFireDatabase) {}
+
+  hotels = [];
+  hotelsList() {
+    this.db
+      .list('hotelsData')
+      .snapshotChanges()
+      .pipe(
+        map(data => {
+          return data.map(info =>
+          (
+            { key: info.key, ...info.payload.val() as {} }
+          )
+          )
+        }
+        )
+      ).subscribe(data => {
+        this.hotels = data;
+        console.log(this.hotels)
+        }
+      )
+  }
 
   ngOnInit(): void {
+    this.hotelsList();
   }
 
 }

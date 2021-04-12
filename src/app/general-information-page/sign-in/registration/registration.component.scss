@@ -16,6 +16,12 @@ form{
             width: 60%;
             height: 25px;
             border: black 2px solid;
+            &.ng-valid{
+                background-color: rgb(101, 199, 132);
+              }
+              &.ng-invalid{
+                background-color: rgb(233, 132, 128);
+              }
         }
         button{
             height: 30px;
